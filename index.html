@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashutosh Khanduala | @ashuvssut">
+    <title>Sliding Carousel</title>
+
+    <link rel="shortcut icon href=" ../.vscode/flask.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./task1-carousel/app.css" />
+    <link rel="stylesheet" href="./task2-pet-world/app.css" />
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <script defer src="./task1-carousel/slidingCarousel.js"></script>
+    <script defer src="./task2-pet-world/petWorld.js"></script>
+</head>
+
+<body>
+    <section id="task1">
+        <h1 class="heading">Avengers Avenue</h1>
+        <div class="container">
+            <div class="sliding-carousel sliding-photo-carousel1">
+                <div class="carousel-wrapper">
+                    <div class="slides-container">
+                        <div class="slide active-slide">
+                            <img src=" https://s3-ap-southeast-1.amazonaws.com/he-public-data/Avengers3c9095c4.jpg" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/Avengers1dde2dff.jpg" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/Avengers2f856ebb.jpg" />
+                        </div>
+                        <div class="slide active-slide">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/Avengers40b07bc7.jpg" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/Avengers51fd2ccc.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-button rt-button">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/Right%20Control3fc6d2d.png" alt="" srcset="">
+                </div>
+                <div class="slide-button lt-button">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/Left%20Control577660a.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="task2">
+        <h1 class="heading">Pet World</h1>
+        <div class="container">
+            <div class="col switch-list">
+                <button data-name='dog' class="pet-btn">Dog</button>
+                <button data-name='cat' class="pet-btn">Cat</button>
+                <button data-name='parrot' class="pet-btn">Parrot</button>
+            </div>
+            <div class="col photo-viewer">
+
+                <img id="dog" class="keep-on-top" src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/Dog%20image69059f5.jpg" alt="">
+                <img id="cat" src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/At%20image7532683.jpg" alt="">
+                <img id="parrot" src="https://s3-ap-southeast-1.amazonaws.com/he-public-data/Parrot%20image7f2c45e.jpg" alt="">
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

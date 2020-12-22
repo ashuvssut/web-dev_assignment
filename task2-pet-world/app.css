@@ -12,7 +12,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   max-width: 670px;
+}
+#task2 .container .head {
+  letter-spacing: 3px;
+  word-spacing: 13px;
+}
+#task2 .container .body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .col {
   padding: 50px 30px;
@@ -39,11 +50,11 @@
   cursor: pointer;
   outline: none;
 }
-.pet-btn:hover{
-    transform: scale(0.95);
+.pet-btn:hover {
+  transform: scale(0.95);
 }
-.pet-btn:active{
-    transform: scale(0.9);
+.pet-btn:active {
+  transform: scale(0.9);
 }
 .photo-viewer {
   width: 80%;
@@ -60,6 +71,6 @@
   object-fit: cover;
   border: black 2px solid;
 }
-.keep-on-top{
-    z-index: 1;
+.keep-on-top {
+  z-index: 1;
 }
